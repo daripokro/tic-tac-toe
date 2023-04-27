@@ -16,15 +16,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    DataClass.cpp \
+    FillCellDialog.cpp \
     SettingsDialog.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
+    DataClass.hpp \
+    FillCellDialog.hpp \
     MainWindow.hpp \
     SettingsDialog.hpp
 
 FORMS += \
+    FillCellDialog.ui \
     MainWindow.ui \
     SettingsDialog.ui
 

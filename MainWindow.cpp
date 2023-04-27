@@ -7,12 +7,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QPixmap iconStart = QPixmap( ":/icons/Resources/start.png" );
-    ui->pushButtonStart->setIcon( iconStart );
-    ui->pushButtonStart->setIconSize( iconStart.rect().size() );
+    ui->startButton->setIcon( iconStart );
+    ui->startButton->setIconSize( iconStart.rect().size() );
     QPixmap iconSettings = QPixmap( ":/icons/Resources/settings.png" );
-    ui->pushButtonSettings->setIcon( iconSettings );
-    ui->pushButtonSettings->setIconSize( iconSettings.rect().size() );
-// TODO:: добавить шрифт для текста на кнопках  и вообще
+    ui->settingsButton->setIcon( iconSettings );
+    ui->settingsButton->setIconSize( iconSettings.rect().size() );
+// TODO:: добавить шрифт для текста
 }
 
 MainWindow::~MainWindow()

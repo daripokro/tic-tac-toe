@@ -16,16 +16,16 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButtonStart">
+     <widget class="QToolButton" name="startButton">
       <property name="text">
-       <string>Начать</string>
+       <string>...</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButtonSettings">
+     <widget class="QToolButton" name="settingsButton">
       <property name="text">
-       <string>Настройки</string>
+       <string>...</string>
       </property>
      </widget>
     </item>
