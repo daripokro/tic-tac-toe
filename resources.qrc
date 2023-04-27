@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Resources/numbers/1.png</file>
+        <file>Resources/numbers/2.png</file>
+        <file>Resources/numbers/3.png</file>
+        <file>Resources/numbers/4.png</file>
+        <file>Resources/numbers/5.png</file>
+        <file>Resources/numbers/6.png</file>
+        <file>Resources/numbers/7.png</file>
+        <file>Resources/numbers/8.png</file>
+        <file>Resources/numbers/9.png</file>
+        <file>Resources/settings.png</file>
+        <file>Resources/start.png</file>
+    </qresource>
+</RCC>
