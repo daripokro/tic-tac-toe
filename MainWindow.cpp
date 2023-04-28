@@ -1,5 +1,6 @@
 #include "MainWindow.hpp"
 #include "ui_MainWindow.h"
+#include "SettingsDialog.hpp"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -12,7 +13,14 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap iconSettings = QPixmap( ":/icons/Resources/settings.png" );
     ui->settingsButton->setIcon( iconSettings );
     ui->settingsButton->setIconSize( iconSettings.rect().size() );
-// TODO:: добавить шрифт для текста
+/* TODO::
+ * * добавить красивый шрифт для текста
+ * * возможность задать, изменять и отображать название команд
+ * * настройки музыкального сопровождения
+ * * сброс к дефолтным настройкам
+ *
+ * */
+
 }
 
 MainWindow::~MainWindow()
@@ -21,12 +29,13 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_pushButtonSettings_clicked()
+void MainWindow::on_settingsButton_clicked()
 {
-
+    SettingsDialog dialog( this );
+    dialog.exec();
 }
 
-void MainWindow::on_pushButtonStart_clicked()
+void MainWindow::on_startButton_clicked()
 {
 
 }

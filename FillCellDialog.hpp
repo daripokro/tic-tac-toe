@@ -16,15 +16,14 @@ public:
     explicit FillCellDialog( FieldData number, QWidget *parent = nullptr );
     ~FillCellDialog();
 
-protected:
-    void showEvent( QShowEvent * ) override;
-
 private slots:
     void accept() override;
     void reject() override;
 
 private:
     Ui::FillCellDialog *ui;
+    bool _checkInput();
+    FieldData _cellNumber = FieldData::Undefined;
 };
 
 #endif // FILLCELLDIALOG_HPP
