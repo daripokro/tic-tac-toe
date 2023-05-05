@@ -28,20 +28,16 @@ public:
         static DataClass _instance;
         return _instance;
     };
-    void setTextForCell( FieldData cellNumber, QString text )
-    {
-        _cellsTextVector.at( cellNumber ) = text;
-        qDebug() << QString::number(cellNumber) + ": " +  text;
-    };
+    void setTextForCell( FieldData cellNumber, QString text );
     QString textFromCell( FieldData cellNumber );
     void resetToDefault();
 
 private:
-    DataClass() = default /*_cellsTextVector( std::vector< QString >{} ) {}*/;
+    DataClass() = default;
     ~DataClass() {};
 
     static std::vector< QString > _defaultCellsTextVector;
-    std::vector< QString > _cellsTextVector{ _defaultCellsTextVector/*"", "", "", "", "", "", "", "", "",*/  };
+    std::vector< QString > _cellsTextVector{ _defaultCellsTextVector };
 };
 
 #endif // DATACLASS_HPP

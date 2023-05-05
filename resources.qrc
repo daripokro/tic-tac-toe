@@ -12,4 +12,8 @@
         <file>Resources/settings.png</file>
         <file>Resources/start.png</file>
     </qresource>
+    <qresource prefix="/fonts">
+        <file>Resources/fonts/noah_bold.ttf</file>
+        <file>Resources/fonts/noah.ttf</file>
+    </qresource>
 </RCC>

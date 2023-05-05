@@ -1,6 +1,7 @@
 #include "MainWindow.hpp"
 #include "ui_MainWindow.h"
 #include "SettingsDialog.hpp"
+#include "GameFieldDialog.hpp"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap iconSettings = QPixmap( ":/icons/Resources/settings.png" );
     ui->settingsButton->setIcon( iconSettings );
     ui->settingsButton->setIconSize( iconSettings.rect().size() );
+
 /* TODO::
  * * добавить красивый шрифт для текста
  * * возможность задать, изменять и отображать название команд
@@ -37,5 +39,6 @@ void MainWindow::on_settingsButton_clicked()
 
 void MainWindow::on_startButton_clicked()
 {
-
+    GameFieldDialog dialog( this );
+    //dialog.exec();
 }

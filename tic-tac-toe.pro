@@ -18,18 +18,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     DataClass.cpp \
     FillCellDialog.cpp \
+    GameFieldDialog.cpp \
     SettingsDialog.cpp \
+    Utils/StyleHelper.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
     DataClass.hpp \
     FillCellDialog.hpp \
+    GameFieldDialog.hpp \
     MainWindow.hpp \
-    SettingsDialog.hpp
+    SettingsDialog.hpp \
+    Utils/StyleHelper.hpp
 
 FORMS += \
     FillCellDialog.ui \
+    GameFieldDialog.ui \
     MainWindow.ui \
     SettingsDialog.ui
 

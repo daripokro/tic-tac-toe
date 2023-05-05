@@ -10,19 +10,22 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Tic-tac-toe</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
      <widget class="QToolButton" name="startButton">
       <property name="text">
        <string>...</string>
       </property>
      </widget>
     </item>
-    <item>
+    <item row="1" column="0">
      <widget class="QToolButton" name="settingsButton">
       <property name="text">
        <string>...</string>
