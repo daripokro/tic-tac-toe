@@ -9,9 +9,16 @@ public:
     StyleHelper();
 
     static QString setFieldStyle();
-    static QString setDefaultButtonStyle();
-    static QString setZeroStyle();
-    static QString setCrossStyle();
+    static QString defaultButtonStyle();
+
+    static QString zeroNormalStyle();
+    static QString crossNormalStyle();
+
+    static QString crossVictoryStyle();
+    static QString zeroVictoryStyle();
+
+    static QString crossLostStyle();
+    static QString zeroLostStyle();
 
 protected:
 

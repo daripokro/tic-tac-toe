@@ -11,6 +11,9 @@
         <file>Resources/numbers/9.png</file>
         <file>Resources/settings.png</file>
         <file>Resources/start.png</file>
+        <file>Resources/cross.png</file>
+        <file>Resources/zero.png</file>
+        <file>Resources/appIcon.png</file>
     </qresource>
     <qresource prefix="/fonts">
         <file>Resources/fonts/noah_bold.ttf</file>

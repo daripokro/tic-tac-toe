@@ -7,6 +7,7 @@ SettingsDialog::SettingsDialog( QWidget *parent ) :
     ui( new Ui::SettingsDialog )
 {
     ui->setupUi( this );
+    this->setWindowIcon( QIcon( ":/icons/Resources/settings.png" ) );
 }
 
 SettingsDialog::~SettingsDialog()

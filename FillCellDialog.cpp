@@ -1,6 +1,8 @@
 #include "FillCellDialog.hpp"
 #include "ui_FillCellDialog.h"
 #include <QMessageBox>
+#include <QIcon>
+
 #include <QDebug>
 
 FillCellDialog::FillCellDialog( FieldData number, QWidget *parent ) :
@@ -11,6 +13,7 @@ FillCellDialog::FillCellDialog( FieldData number, QWidget *parent ) :
     ui->setupUi(this);
     Q_ASSERT_X( ( _cellNumber != FieldData::Undefined ) || ( _cellNumber < FieldData::Nine )
                 , "FillCellDialog", "invalid cell number" );
+    this->setWindowIcon( QIcon( ":/icons/Resources/appIcon.png" ) );
     ui->imageLabel->setPixmap( ":/icons/Resources/numbers/" + QString::number( _cellNumber ) + ".png"  );
     ui->titleLabel->setText( "Установить текст " + QString::number( _cellNumber ) + " ячейки" );
 
