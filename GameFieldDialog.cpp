@@ -302,11 +302,8 @@ void GameFieldDialog::_endGame()
             //ui->messageLabel->setText("Проиграл");
             //ui->messageLabel->setStyleSheet(StyleHelper::getLostMessageStyle());
         }
-        //playerLocked = true;
         //ui->startButton->setText("Играть");
         //ui->startButton->setStyleSheet(StyleHelper::getStartButtonsStyle());
-        //ui->leftButton->setDisabled(false);
-        //ui->rightButton->setDisabled(false);
         //gameStart = false;
     }
     else
@@ -324,12 +321,15 @@ void GameFieldDialog::_endGame()
 
 void GameFieldDialog::_fillCellsText()
 {
-    _cellNumber = 0;
+    _cellNumber = 1;
     for( int row = 0; row < 3; ++row )
     {
         for( int column = 0; column < 3; ++column )
         {
-            DataClass::instance().textFromCell( _cellNumber );
+            QGridLayout *grid = qobject_cast < QGridLayout* >( this->layout() );
+            QPushButton *btn = qobject_cast < QPushButton* >( grid->itemAtPosition( row, column )->widget() );
+            // перенос слов; фиксировать размер кнопок?
+            btn->setText( DataClass::instance().textFromCell( static_cast< FieldData >( _cellNumber ) ) );
             _cellNumber++;
         }
     }
